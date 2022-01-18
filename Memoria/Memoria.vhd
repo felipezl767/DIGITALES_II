@@ -73,7 +73,7 @@ architecture memoriaarch of Memoria is
 			elsif(address = x"F9") then 	data_out <= port_in_09;
 			elsif(address = x"F10") then 	data_out <= port_in_10;
 			elsif(address = x"F11") then 	data_out <= port_in_11;
-			elsif(address = x"F12") then 	data_out <= port_in_12;
+	--		elsif(address = x"F12") then 	data_out <= port_in_12;
 			elsif(address = x"F13") then 	data_out <= port_in_13;
 			elsif(address = x"F14") then 	data_out <= port_in_14;
 			elsif(address = x"F15") then 	data_out <= port_in_15;

@@ -18,7 +18,7 @@ architecture dataflow of entradas is
 
 begin
 
---port_out_00 description : ADDRESS x"E0"
+--port_out_00 descripcion : ADDRESS x"E0"
 	U3: process (clock,reset)
 	begin 
 		if(reset = '0')then
@@ -30,7 +30,7 @@ begin
 		end if;
 	end process;
 	
---port_out_01 description : ADDRESS x"E1"
+--port_out_01 descripcion : ADDRESS x"E1"
 	U4: process (clock,reset)
 	begin 
 		if(reset = '0')then
@@ -41,7 +41,7 @@ begin
 			end if;
 		end if;
 	end process;
---port_out_02 description : ADDRESS x"E2"
+--port_out_02 descripcion : ADDRESS x"E2"
 	U5: process (clock,reset)
 	begin 
 		if(reset = '0')then
@@ -52,7 +52,7 @@ begin
 			end if;
 		end if;
 	end process;
---port_out_03 description : ADDRESS x"E3"
+--port_out_03 descripcion : ADDRESS x"E3"
 	U6: process (clock,reset)
 	begin 
 		if(reset = '0')then
@@ -63,7 +63,7 @@ begin
 			end if;
 		end if;
 	end process;
---port_out_04 description : ADDRESS x"E4"
+--port_out_04 descripcion : ADDRESS x"E4"
 	U7: process (clock,reset)
 	begin 
 		if(reset = '0')then
@@ -74,7 +74,7 @@ begin
 			end if;
 		end if;
 	end process;
---port_out_05 description : ADDRESS x"E5"
+--port_out_05 descripcion : ADDRESS x"E5"
 	U8: process (clock,reset)
 	begin 
 		if(reset = '0')then
@@ -85,7 +85,7 @@ begin
 			end if;
 		end if;
 	end process;
---port_out_06 description : ADDRESS x"E6"
+--port_out_06 descripcion : ADDRESS x"E6"
 	U9: process (clock,reset)
 	begin 
 		if(reset = '0')then
@@ -96,7 +96,7 @@ begin
 			end if;
 		end if;
 	end process;
---port_out_07 description : ADDRESS x"E7"
+--port_out_07 descripcion : ADDRESS x"E7"
 	U10: process (clock,reset)
 	begin 
 		if(reset = '0')then
@@ -107,7 +107,7 @@ begin
 			end if;
 		end if;
 	end process;
---port_out_08 description : ADDRESS x"E8"
+--port_out_08 descripcion : ADDRESS x"E8"
 	U11: process (clock,reset)
 	begin 
 		if(reset = '0')then
@@ -118,7 +118,7 @@ begin
 			end if;
 		end if;
 	end process;
---port_out_09 description : ADDRESS x"E9"
+--port_out_09 descripcion : ADDRESS x"E9"
 	U12: process (clock,reset)
 	begin 
 		if(reset = '0')then
@@ -129,7 +129,7 @@ begin
 			end if;
 		end if;
 	end process;
---port_out_10 description : ADDRESS x"E10"
+--port_out_10 descripcion : ADDRESS x"E10"
 	U13: process (clock,reset)
 	begin 
 		if(reset = '0')then
@@ -140,7 +140,7 @@ begin
 			end if;
 		end if;
 	end process;
---port_out_11 description : ADDRESS x"E11"
+--port_out_11 descripcion : ADDRESS x"E11"
 	U14: process (clock,reset)
 	begin 
 		if(reset = '0')then
@@ -151,7 +151,7 @@ begin
 			end if;
 		end if;
 	end process;
---port_out_12 description : ADDRESS x"E12"
+--port_out_12 descripcion : ADDRESS x"E12"
 	U15: process (clock,reset)
 	begin 
 		if(reset = '0')then
@@ -162,7 +162,7 @@ begin
 			end if;
 		end if;
 	end process;
---port_out_13 description : ADDRESS x"E13"
+--port_out_13 descripcion : ADDRESS x"E13"
 	U16: process (clock,reset)
 	begin 
 		if(reset = '0')then
@@ -173,7 +173,7 @@ begin
 			end if;
 		end if;
 	end process;
---port_out_14 description : ADDRESS x"E14"
+--port_out_14 descripcion : ADDRESS x"E14"
 	U17: process (clock,reset)
 	begin 
 		if(reset = '0')then
@@ -184,7 +184,7 @@ begin
 			end if;
 		end if;
 	end process;
---port_out_15 description : ADDRESS x"E15"
+--port_out_15 descripcion : ADDRESS x"E15"
 	U18: process (clock,reset)
 	begin 
 		if(reset = '0')then

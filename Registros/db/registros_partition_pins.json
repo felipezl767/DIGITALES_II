@@ -1,0 +1,185 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "IR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "to_memory[0]",
+					"strict" : false
+				},
+				{
+					"name" : "to_memory[1]",
+					"strict" : false
+				},
+				{
+					"name" : "to_memory[2]",
+					"strict" : false
+				},
+				{
+					"name" : "to_memory[3]",
+					"strict" : false
+				},
+				{
+					"name" : "to_memory[4]",
+					"strict" : false
+				},
+				{
+					"name" : "to_memory[5]",
+					"strict" : false
+				},
+				{
+					"name" : "to_memory[6]",
+					"strict" : false
+				},
+				{
+					"name" : "to_memory[7]",
+					"strict" : false
+				},
+				{
+					"name" : "address[0]",
+					"strict" : false
+				},
+				{
+					"name" : "address[1]",
+					"strict" : false
+				},
+				{
+					"name" : "address[2]",
+					"strict" : false
+				},
+				{
+					"name" : "address[3]",
+					"strict" : false
+				},
+				{
+					"name" : "address[4]",
+					"strict" : false
+				},
+				{
+					"name" : "address[5]",
+					"strict" : false
+				},
+				{
+					"name" : "address[6]",
+					"strict" : false
+				},
+				{
+					"name" : "address[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus1_Sel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus1_Sel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "from_memory[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus2_Sel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus2_Sel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "IR_Load",
+					"strict" : false
+				},
+				{
+					"name" : "from_memory[1]",
+					"strict" : false
+				},
+				{
+					"name" : "from_memory[2]",
+					"strict" : false
+				},
+				{
+					"name" : "from_memory[3]",
+					"strict" : false
+				},
+				{
+					"name" : "from_memory[4]",
+					"strict" : false
+				},
+				{
+					"name" : "from_memory[5]",
+					"strict" : false
+				},
+				{
+					"name" : "from_memory[6]",
+					"strict" : false
+				},
+				{
+					"name" : "from_memory[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_Load",
+					"strict" : false
+				},
+				{
+					"name" : "PC_Inc",
+					"strict" : false
+				},
+				{
+					"name" : "A_Load",
+					"strict" : false
+				},
+				{
+					"name" : "B_Load",
+					"strict" : false
+				},
+				{
+					"name" : "MAR_Load",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

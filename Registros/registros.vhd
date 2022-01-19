@@ -32,7 +32,7 @@ architecture registros_arch of registros is
 	
 	begin 
 	
-	--COMP ALU
+	--COMPONENTE ALU
 	
 	--u0	: alu port map(B=>B , Bus1 => Bus1, Alu_Sel => Alu_Sel, NZVC => NZVC, Alu_Result => Alu_result);
 	
@@ -89,7 +89,7 @@ architecture registros_arch of registros is
 		end if;
 	end process;
 		
-	--Contador de progrmas PC
+	--Contador de programas PC
 	
 	PROGRAM_COUNTER : process (Clock, Reset)
 	begin
@@ -106,7 +106,7 @@ architecture registros_arch of registros is
 	
 	PC <= std_logic_vector(PC_uns);
 	
-	--Regsitro A
+	--Registro A
 	
 	A_REGISTER : process (Clock, Reset)
 	begin
@@ -119,7 +119,7 @@ architecture registros_arch of registros is
 		end if;
 	end process;
 
-	--Regsitro B
+	--Registro B
 
 	B_REGISTER : process (Clock, Reset)
 	begin

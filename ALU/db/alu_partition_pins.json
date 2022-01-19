@@ -1,0 +1,133 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ALU_Result[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_Result[7]",
+					"strict" : false
+				},
+				{
+					"name" : "NZVC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "NZVC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "NZVC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "NZVC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_se1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_se1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_se1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Bus1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

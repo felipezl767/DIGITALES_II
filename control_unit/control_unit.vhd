@@ -213,6 +213,8 @@ architecture control_unit_arch of control_unit is
 	
 	begin
 	
+	-- erorr illegal in expression
+	
 		case current_state is
 		
 			when S_FETCH_0 => -- expresa PC en MAR para leer codigo

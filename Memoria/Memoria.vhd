@@ -8,10 +8,11 @@ use ieee.numeric_std.all;
 entity Memoria is
 	
 	port(clock, reset, writen		: in std_logic	;
-			address, data_in 			: in std_logic_vector(7 downto 0);
-			sw: in STD_LOGIC_VECTOR(2 downto 0);
-			pb: in STD_LOGIC;
+			address, data_in 			: in std_logic_vector(7 downto 0);	
 			hex0: out STD_LOGIC_VECTOR(0 to 7);
+			hex1: out STD_LOGIC_VECTOR(0 to 7);
+			hex2: out STD_LOGIC_VECTOR(0 to 7);
+			hex3: out STD_LOGIC_VECTOR(0 to 7);
 			port_in_00, port_in_01, port_in_02, port_in_03, port_in_04, port_in_05,
 			port_in_06, port_in_07, port_in_08, port_in_09, port_in_10, port_in_11,
 			port_in_12, port_in_13, port_in_14, port_in_15 	: in std_logic_vector(7 downto 0);
@@ -49,7 +50,17 @@ architecture memoriaarch of Memoria is
 				hex0: OUT STD_LOGIC_VECTOR(0 to 7));	
 	end component;
 	
+	
 	signal rom_data_out, rw_data_out,data_out 	: std_logic_vector(7 downto 0);
+	
+	signal sw0 : std_logic_vector(2 downto 0) := address(2 downto 0);
+	signal pb0 : std_logic := address(3);
+	signal sw1 : std_logic_vector(2 downto 0) := address(6 downto 4);
+	signal pb1 : std_logic := address(7);
+	signal sw2 : std_logic_vector(2 downto 0) := data_out(2 downto 0);
+	signal pb2 : std_logic := data_out(3);
+	signal sw3 : std_logic_vector(2 downto 0) := data_out(6 downto 4);
+	signal pb3 : std_logic := data_out(7);
 	
 	begin 
 	
@@ -59,8 +70,11 @@ architecture memoriaarch of Memoria is
 											port_out_02,port_out_03,port_out_04,port_out_05,port_out_06,
 											port_out_07,port_out_08,port_out_09,port_out_10,port_out_11,
 											port_out_12,port_out_13,port_out_14,port_out_15);
-   sevenSeg : sevensegment port map (sw,pb,hex0);												
-										
+											
+   sevenSeg0 : sevensegment port map (sw0,pb0,hex0);	
+	sevenSeg1 : sevensegment port map (sw1,pb1,hex1);	
+	sevenSeg2 : sevensegment port map (sw2,pb2,hex2);	
+	sevenSeg3 : sevensegment port map (sw3,pb3,hex3);								
 											
 	MUX1 : process (address, rom_data_out, rw_data_out, port_in_00, port_in_01, port_in_02,
 							port_in_03, port_in_04, port_in_05, port_in_06, port_in_07, port_in_08,
@@ -72,6 +86,7 @@ architecture memoriaarch of Memoria is
 			data_out <= rom_data_out;
 			elsif((to_integer(unsigned(address)) >= 128) and (to_integer(unsigned(address)) <= 223)) then
 				data_out <= rw_data_out;
+				
 			elsif(address = x"F0") then 	data_out <= port_in_00;
 			elsif(address = x"F1") then 	data_out <= port_in_01;
 			elsif(address = x"F2") then 	data_out <= port_in_02;
@@ -91,5 +106,8 @@ architecture memoriaarch of Memoria is
 			else data_out <= x"00";
 		
 		end if;
+		
+		
 	end process;
+  
 end architecture;
